@@ -361,6 +361,9 @@ let simboloO=0// variavel que conta os simbolo O e quando a partida acaba ela ze
         resultado_partida=true// se der true é por que deu empate
           console.log("empate")
           break;}
+
+    } else {
+      console.log("Você digitou errado");
     }
     console.table(tabuleiro_jogo);
     let escolha_jogador2 = +prompt(
@@ -406,7 +409,9 @@ let simboloO=0// variavel que conta os simbolo O e quando a partida acaba ela ze
         pontos_final_jogador2++
         console.log(`${jogador2_nome} ganhou `);
         break;
-      } 
+      } else {
+        console.log("Você digitou errado");
+      }
     }
   }
   let retornar = prompt("caso deseja continuar diga sim  ");// pergunta pra encerrar o jogo
